@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import SmoothCorner from "../components/SmoothCorner/SmoothCorner";
 import { navLinks } from "../constants/navigationLinks";
-import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
