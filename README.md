@@ -1,2 +1,2 @@
 # website
-My personal website, made with React.js and Next.js
+My personal website, made with React.js, Next.js, and TailwindCSS.

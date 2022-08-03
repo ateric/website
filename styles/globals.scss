@@ -1,0 +1,236 @@
+@import "reset.scss";
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 900;
+  src: url("../public/fonts/BrandonGrotesque-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 900;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 700;
+  src: url("../public/fonts/BrandonGrotesque-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 500;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-MediumItalic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 500;
+  src: url("../public/fonts/BrandonGrotesque-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-RegularItalic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 400;
+  src: url("../public/fonts/BrandonGrotesque-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 300;
+  src: url("../public/fonts/BrandonGrotesque-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 100;
+  font-style: italic;
+  src: url("../public/fonts/BrandonGrotesque-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 100;
+  src: url("../public/fonts/BrandonGrotesque-Thin.woff2") format("woff2");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Brandon Grotesque";
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+.linkEffect--pink:after {
+  background-color: #ff4cff;
+}
+
+.linkEffect--orange:after {
+  background-color: #ff813d;
+}
+
+.linkEffect--green:after {
+  background-color: #0bda51;
+}
+
+.linkEffect--blue:after {
+  background-color: #1a5dd2;
+}
+
+.linkEffect--red:after {
+  background-color: #ff0033;
+}
+
+.linkEffect--purple:after {
+  background-color: #6f2da8;
+}
+
+.linkEffect--yellow:after {
+  background-color: #ffd700;
+}
+
+@layer utilities {
+  .box-50 {
+    height: 50rem;
+    width: 50rem;
+  }
+
+  .box-45 {
+    height: 46.5rem;
+    width: 46.5rem;
+  }
+
+  .gradient_1 {
+    background: linear-gradient(
+      155.48deg,
+      #05d6d9 0%,
+      #05d6d9 0.01%,
+      #f907fc 100.39%
+    );
+    border-radius: 20px;
+  }
+
+  .blurGradient,
+  .blurGradient:before,
+  .blurGradient:after {
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    background: linear-gradient(
+      155.48deg,
+      #05d6d9 0%,
+      #05d6d9 0.01%,
+      #f907fc 100.39%
+    );
+    background-size: 400%;
+    animation: borderbg 40s linear infinite;
+    border-radius: 14rem;
+  }
+
+  @keyframes borderbg {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .blurGradient:after {
+    filter: blur(70px);
+  }
+
+  .gradient_2 {
+    background: linear-gradient(
+      90deg,
+      #087ee1 0%,
+      rgba(162, 50, 242, 0.359375) 64.06%,
+      rgba(249, 7, 252, 0) 100%
+    );
+    border-radius: 20px;
+  }
+
+  .smoothed {
+    border-radius: 20px;
+    @supports (mask-image: paint(smooth-corners)) {
+      border-radius: 0;
+      --smooth-corners: 8;
+      mask-image: paint(smooth-corners);
+      -webkit-mask-image: paint(smooth-corners);
+    }
+  }
+
+  .linkEffect:after,
+  .underline:after {
+    content: "";
+  }
+
+  .linkEffect {
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  .linkEffect:after {
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: 100%;
+    top: 0;
+    left: 1.5rem;
+    -webkit-transform: translateX(calc(-100% - 1.5em)) skew(0);
+    transform: translateX(calc(-100% - 1.5em)) skew(0);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    z-index: -1;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+
+  .linkEffect:hover:after {
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: translateX(0) skew(-7.77deg);
+    transform: translateX(0) skew(-7.77deg);
+  }
+}
