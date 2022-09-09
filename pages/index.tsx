@@ -6,8 +6,8 @@ const Home: NextPage = () => {
   return (
     <div className={"h-full w-full bg-black flex justify-center items-center"}>
       <div className="blurGradient"></div>
-      <SmoothCorner className="box-50 gradient_1 flex justify-center items-center movingBlurGradient">
-        <SmoothCorner className="box-45 bg-black flex items-center flex-col">
+      <SmoothCorner className="box-50 gradient_1 flex justify-center items-center movingBlurGradient z-10">
+        <SmoothCorner className="box-45 bg-black flex items-center flex-col z-0">
           <div className="flex justify-center flex-col my-20">
             <h1 className="text-super-350 text-6xl font-bold">Daniel Miller</h1>
             <div className="w-10/12 h-2 mt-1 ml-1 bg-white rounded-full gradient_2"></div>
