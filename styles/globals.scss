@@ -233,4 +233,45 @@ body {
     -webkit-transform: translateX(0) skew(-7.77deg);
     transform: translateX(0) skew(-7.77deg);
   }
+
+  .homeNavButtonWidth{
+    width: 35%;
+  }
+
+  .hoverButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.15rem solid #fff;
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 10rem;
+    height: 3.5rem;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transition: all 0.2s;
+      color: #000;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .linkedInHover{
+    &:hover {
+      background-color: #0e76a8;
+      color: #fff;
+      transition: all 0.2s;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+  }
 }
