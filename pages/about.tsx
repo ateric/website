@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
+import { about } from "../constants/metadata";
 
 const About: NextPage = () => {
   return (
     <div
       className={
-        "h-full w-full bg-black flex justify-center items-center flex-col"
+        "h-screen w-full bg-black flex justify-center items-center flex-col"
       }
     >
+      <NextSeo {...about} />
       <h1 className={"text-4xl text-white m-6"}>
         {"I'm still working on this page"}
       </h1>

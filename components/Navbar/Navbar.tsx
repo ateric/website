@@ -4,7 +4,7 @@ import { navLinks } from "../../constants/navigationLinks";
 // Todo: Make a mobile-optimized navbar
 
 interface Props {
-  page: string;
+  page?: string;
 }
 
 const Navbar: NextPage<Props> = ({ page }) => {

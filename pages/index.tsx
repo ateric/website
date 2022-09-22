@@ -1,10 +1,15 @@
 import type { NextPage } from "next";
+import { NextSeo } from "next-seo";
 import SmoothCorner from "../components/SmoothCorner/SmoothCorner";
 import { navLinks } from "../constants/navigationLinks";
+import { index } from "../constants/metadata";
 
 const Home: NextPage = () => {
   return (
-    <div className={"h-screen w-full bg-black flex justify-center items-center"}>
+    <div
+      className={"h-screen w-full bg-black flex justify-center items-center"}
+    >
+      <NextSeo {...index} />
       <div className="blurGradient"></div>
       <SmoothCorner className="box-50 gradient_1 flex justify-center items-center movingBlurGradient z-10">
         <SmoothCorner className="box-45 bg-black flex items-center justify-center flex-col z-0">

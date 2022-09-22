@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
+import { NextSeo } from "next-seo";
 import Navbar from "../components/Navbar/Navbar";
 import ToolCard from "../components/ToolCard/ToolCard";
+import { portfolio } from "../constants/metadata";
 import { tools } from "../constants/tools";
 
 const Portfolio: NextPage = () => {
@@ -10,6 +12,7 @@ const Portfolio: NextPage = () => {
         "flex items-center justify-center flex-col h-full w-full bg-black"
       }
     >
+      <NextSeo {...portfolio} />
       <Navbar page="portfolio" />
       <div
         className={"flex items-center h-full w-full bg-black flex-col mt-16"}
