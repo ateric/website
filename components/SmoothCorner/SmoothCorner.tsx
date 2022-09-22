@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import styles from "./SmoothCorner.module.scss";
 import { useEffect } from "react";
 
 import attachPaintWorklet from "../../lib/attachPaintWorklet";
