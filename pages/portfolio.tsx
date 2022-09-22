@@ -1,21 +1,32 @@
 import type { NextPage } from "next";
-import Link from "next/link";
+import Navbar from "../components/Navbar/Navbar";
+import ToolCard from "../components/ToolCard/ToolCard";
+import { tools } from "../constants/tools";
 
 const Portfolio: NextPage = () => {
   return (
     <div
       className={
-        "h-full w-full bg-black flex justify-center items-center flex-col"
+        "flex items-center justify-center flex-col h-full w-full bg-black"
       }
     >
-      <h1 className={"text-4xl text-white m-6"}>
-        {"I'm still working on this page"}
-      </h1>
-      <Link href="/">
-        <div className={"flex hoverButton mb-6 md:mx-4 lg:mb-8 text-lg"}>
-          <p>Go Home</p>
+      <Navbar page="portfolio" />
+      <div
+        className={"flex items-center h-full w-full bg-black flex-col mt-16"}
+      >
+        <div className={"w-full lg:w-5/6"}>
+          <h2 className={"text-white text-5xl font-bold mb-6 mx-8"}>Skills</h2>
+          <div className={"flex justify-center items-center flex-wrap"}>
+            {tools.map(({ label, icon, color }) => (
+              <ToolCard label={label} icon={icon} color={color} key={label} />
+            ))}
+          </div>
         </div>
-      </Link>
+        <div className={"w-full lg:w-5/6 mb-20"}>
+          <h2 className={"text-white text-5xl font-bold mb-6"}>Projects</h2>
+          <h3 className={"text-white text-2xl"}>Coming soon...</h3>
+        </div>
+      </div>
     </div>
   );
 };
