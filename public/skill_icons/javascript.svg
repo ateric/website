@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 630 630"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="javascript.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2412698"
+     inkscape:cx="315.80563"
+     inkscape:cy="315"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     id="rect2"
+     style="fill:#ffffff"
+     d="M 0 0 L 0 630 L 630 630 L 630 0 L 0 0 z M 479.5 285.89062 C 517.13996 285.89062 544.19924 298.9891 563.69922 333.28906 L 517.59961 362.89062 C 507.44962 344.69064 496.49998 337.51953 479.5 337.51953 C 462.16002 337.51953 451.16992 348.52064 451.16992 362.89062 C 451.16992 380.65061 462.17034 387.83985 487.57031 398.83984 L 502.36914 405.17969 C 552.66909 426.74967 581.07031 448.73974 581.07031 498.17969 C 581.07031 551.47963 539.20065 580.67969 482.9707 580.67969 C 427.99076 580.67969 392.46983 554.48059 375.08984 520.14062 L 423.19922 492.18945 C 435.88921 512.90943 452.39964 528.14062 481.59961 528.14062 C 506.12958 528.14062 521.80078 515.87944 521.80078 498.93945 C 521.80078 478.63947 505.69919 471.45061 478.69922 459.64062 L 463.90039 453.28906 C 421.18043 435.08908 392.80078 412.2898 392.80078 364.08984 C 392.80078 319.68989 426.63005 285.89063 479.5 285.89062 z M 283.89062 289.26953 L 343.08984 289.26953 L 343.08984 491.36914 C 343.08984 552.66908 307.1494 580.57031 254.68945 580.57031 C 207.2895 580.57031 179.84085 556.03911 165.88086 526.49414 L 214.07031 497.32031 C 223.3703 513.8203 231.82994 527.76953 252.16992 527.76953 C 271.6199 527.76953 283.89063 520.16028 283.89062 490.57031 L 283.89062 289.26953 z " />
+</svg>
