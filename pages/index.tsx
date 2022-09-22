@@ -4,7 +4,7 @@ import { navLinks } from "../constants/navigationLinks";
 
 const Home: NextPage = () => {
   return (
-    <div className={"h-full w-full bg-black flex justify-center items-center"}>
+    <div className={"h-screen w-full bg-black flex justify-center items-center"}>
       <div className="blurGradient"></div>
       <SmoothCorner className="box-50 gradient_1 flex justify-center items-center movingBlurGradient z-10">
         <SmoothCorner className="box-45 bg-black flex items-center justify-center flex-col z-0">
