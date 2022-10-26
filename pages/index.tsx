@@ -7,37 +7,44 @@ import { links } from "../constants/links";
 
 const Home: NextPage = () => {
   return (
-    <div
-      className={"h-screen w-full bg-black flex justify-center items-center"}
-    >
+    <div className="flex h-screen w-full items-center justify-center bg-black text-center">
       <NextSeo {...index} />
-      <div className="blurGradient"></div>
-      <div className="lg:box-50 rounded-2xl gradient_1 flex justify-center items-center movingBlurGradient z-10">
-        <div className="lg:box-45 rounded-2xl bg-black flex items-center justify-center flex-col z-0">
+      <div
+        className="invisible md:visible
+        blurGradient text-left max-w-full max-h-full 
+        h-0 w-0
+        md:h-[50rem] md:w-[50rem] 
+        before:h-0 before:w-0
+        after:h-0 after:w-0 
+        md:before:h-[20rem] md:before:w-[50rem] 
+        md:after:h-[50rem] md:after:w-[50rem]
+        absolute before:absolute after:absolute"
+      ></div>
+      <div className="flex justify-center items-center gradient_1 movingBlurGradient z-10 max-w-full w-[50rem] max-h-full h-[50rem] rounded-2xl p-5">
+        <div className="max-w-full w-[46.5rem] max-h-full h-[46.5rem] z-0 col-span-full row-span-full flex flex-col items-center justify-evenly rounded-2xl bg-black">
           <div className="flex justify-center flex-col">
             <h1 className="text-super-350 text-6xl font-bold">Daniel Miller</h1>
-            <div className="w-10/12 h-2 mt-1 ml-1 bg-white rounded-full gradient_2"></div>
+            <div className="gradient_2 mt-1 ml-1 h-2 w-10/12 rounded-full bg-white"></div>
           </div>
-          <div className="text-neutral-100 flex justify-center items-center h-3/5">
-            <div className="flex flex-wrap justify-center">
-              {navLinks.map((item) =>
-                item.noHomepageDisplay ? (
-                  ""
-                ) : (
-                  <a
-                    href={item.url}
-                    key={item.name}
-                    className={`flex justify-center items-center font-black italic text-7xl mx-10 h-40`}
-                  >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1vw] text-neutral-100 text-fluid">
+            {navLinks.map((item) =>
+              item.noHomepageDisplay ? (
+                ""
+              ) : (
+                <div
+                  key={item.name}
+                  className={`flex justify-center items-center font-black italic text-7xl mx-10 h-24 sm:h-40`}
+                >
+                  <a href={item.url}>
                     <div
                       className={`px-7 w-full linkEffect linkEffect--${item.color}`}
                     >
                       <h2 className="">{item.name}</h2>
                     </div>
                   </a>
-                )
-              )}
-            </div>
+                </div>
+              )
+            )}
           </div>
           <div className="flex justify-center w-full">
             {links.map(({ label, id, url, icon }) => (

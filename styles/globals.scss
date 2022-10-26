@@ -149,9 +149,6 @@ body {
   .blurGradient:before,
   .blurGradient:after {
     content: "";
-    position: absolute;
-    width: 50rem;
-    height: 50rem;
     background: linear-gradient(
       155.48deg,
       #05d6d9 0%,
