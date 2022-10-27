@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontSize: {
         fluid: "clamp(1.5rem, 12vw - 1.5rem, 4.5rem)",
+        "fluid-lg": "clamp(3rem, 12vw - 1.5rem, 3.8rem)",
       },
       height: {
         50: "50rem",

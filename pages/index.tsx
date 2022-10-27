@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       <div className="flex justify-center items-center gradient_1 movingBlurGradient z-10 max-w-full w-[50rem] max-h-full h-[50rem] rounded-2xl p-5">
         <div className="max-w-full w-[46.5rem] max-h-full h-[46.5rem] z-0 col-span-full row-span-full flex flex-col items-center justify-evenly rounded-2xl bg-black">
           <div className="flex justify-center flex-col">
-            <h1 className="text-super-350 text-6xl font-bold">Daniel Miller</h1>
+            <h1 className="text-super-350 text-6xl font-bold text-fluid-lg">Daniel Miller</h1>
             <div className="gradient_2 mt-1 ml-1 h-2 w-10/12 rounded-full bg-white"></div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1vw] text-neutral-100 text-fluid">
