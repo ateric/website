@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Navbar from "../components/Navbar/Navbar";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ToolCard from "../components/ToolCard/ToolCard";
 import { portfolio } from "../constants/metadata";
+import { projects } from "../constants/projects";
 import { tools } from "../constants/tools";
 
 const Portfolio: NextPage = () => {
@@ -26,8 +28,12 @@ const Portfolio: NextPage = () => {
           </div>
         </div>
         <div className={"w-full lg:w-5/6 mb-20"}>
-          <h2 className={"text-white text-5xl font-bold mb-6"}>Projects</h2>
-          <h3 className={"text-white text-2xl"}>Coming soon...</h3>
+          <h2 className={"text-white text-5xl font-bold mb-6 mx-8"}>Projects</h2>
+          <div className="flex flex-wrap justify-center">
+            {projects.map((project) => (
+              <ProjectCard project={project} key={project.name} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
