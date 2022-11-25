@@ -11,7 +11,7 @@ const Navbar: NextPage<Props> = ({ page }) => {
   return (
     <div
       className={
-        "flex justify-center items-center w-90p md:w-3/5 xl:w-2/5 mt-4 p-1 coloredGradient rounded-full"
+        "flex justify-center items-center w-[90%] md:w-3/5 xl:w-2/5 mt-4 p-1 coloredGradient rounded-full"
       }
     >
       <div
