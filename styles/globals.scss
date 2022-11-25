@@ -89,10 +89,7 @@ html {
   background-color: #000;
 }
 
-body {
-  height: 100%;
-}
-
+body,
 #__next {
   height: 100%;
 }
@@ -126,16 +123,6 @@ body {
 }
 
 @layer utilities {
-  .box-50 {
-    height: 50rem;
-    width: 50rem;
-  }
-
-  .box-45 {
-    height: 46.5rem;
-    width: 46.5rem;
-  }
-
   .gradient_1 {
     background: linear-gradient(
       155.48deg,
@@ -192,17 +179,13 @@ body {
   }
 
   .linkEffect {
-    position: relative;
-    overflow: hidden;
+    @apply relative overflow-hidden;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
   }
 
   .linkEffect:after {
-    position: absolute;
+    @apply absolute h-full top-0 left-6;
     width: calc(100% - 2rem);
-    height: 100%;
-    top: 0;
-    left: 1.5rem;
     -webkit-transform: translateX(calc(-100% - 1.5em)) skew(0);
     transform: translateX(calc(-100% - 1.5em)) skew(0);
     -webkit-transform-origin: right top;
@@ -220,28 +203,16 @@ body {
     transform: translateX(0) skew(-7.77deg);
   }
 
-  .homeNavButtonWidth {
-    width: 35%;
-  }
-
   .hoverButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @apply flex items-center justify-center w-40 h-14 text-white select-none cursor-pointer;
     border: 0.15rem solid #fff;
     border-radius: 0.2rem;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 10rem;
-    height: 3.5rem;
-    color: #fff;
     text-decoration: none;
-    user-select: none;
-    cursor: pointer;
     transition: all 0.2s;
     &:hover {
+      @apply text-black bg-white;
       transition: all 0.2s;
-      color: #000;
-      background-color: #fff;
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
     }
@@ -273,10 +244,6 @@ body {
 
   .toolCardBackground {
     background-color: rgba(20, 20, 20, 1);
-  }
-
-  .w-90p {
-    width: 90%;
   }
 
   .linkIconHover {
